@@ -1,0 +1,50 @@
+[09:51:16][PluginLoader][WARNING] Plugins directory not found.
+[09:51:16][ProcessManager][WARNING] Failed to read PIDs: pid-list.txt (Systém nemůže nalézt uvedený soubor)
+[09:51:16][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/telnet-client-config/-/raw/main/test-config-2.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[09:51:16][NATTCore][INFO] Working directory path: C:\Users\j_snedar\Downloads\telnet-client-main1
+[09:51:16][NATTCore][INFO] Start loading of the configuration file ...
+[09:51:17][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/telnet-client-config/-/raw/main/test-config-2.yaml?ref_type=heads)
+[09:51:17][NATTCore][INFO] Configuration loading done
+[09:51:17][NATTCore][INFO] Start building test structure according to the configuration ...
+[09:51:17][NATTCore][INFO] Test structure ...
+[09:51:17][NATTCore][INFO] Test structure building done
+[09:51:17][NATTCore][INFO] Start test executing ...
+[09:51:17][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[09:51:17][NATTCore][INFO] Starts execution on the root keyword  ...
+[09:51:17][MessageBuffer][INFO] Message buffer created for module with name: tel-server-1
+[09:51:17][TelnetServer][INFO] (tel-server-1) Server socket is listening on port 9999
+[09:51:17][MessageBuffer][INFO] Message buffer created for module with name: default
+[09:51:17][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999
+[09:51:17][ProcessManager][INFO] New PID (3884) added to file
+[09:51:17][WaitKw][INFO] Waiting: 200 ms
+[09:51:17][ProcessManager][INFO] PID (3884) removed from file
+[09:51:17][ExternalProgramRunner][WARNING] (default) External application ends with error: 1
+[09:51:17][ExternalProgramRunner][WARNING] (default) Error message from external application: Error: Unable to access jarfile app/build/libs/app.jar
+
+[09:51:17][TestSuiteKw][INFO] Test case 'Test odeslání zprávy 1' starts executing now
+[09:51:17][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:17][WaitKw][INFO] Waiting: 500 ms
+[09:51:18][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:18][WaitKw][INFO] Waiting: 1200 ms
+[09:51:19][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[09:51:19][NATTContext][INFO] Data has been stored in to the variable 'var-2'. Data value: 
+[09:51:19][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'This is test message 1')
+[09:51:19][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'Next test message')
+[09:51:19][TestSuiteKw][ERROR] Test suite 'Testování odesílání zpráv' - Test case 'Test odeslání zprávy 1' failed
+[09:51:19][MessageBuffer][INFO] Message buffer cleared
+[09:51:19][TestSuiteKw][INFO] Test case 'Test odeslání zprávy 2' starts executing now
+[09:51:19][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:19][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:19][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:19][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:19][ExternalProgramRunner][WARNING] (default) Failed to send data. External app is not running now!
+[09:51:19][WaitKw][INFO] Waiting: 1200 ms
+[09:51:21][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[09:51:21][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'This is test message 3')
+[09:51:21][NATTContext][INFO] Data has been stored in to the variable 'var-2'. Data value: 0
+[09:51:21][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Expected value '5,000000' must be same as the value of the variable '0')
+[09:51:21][TestSuiteKw][ERROR] Test suite 'Testování odesílání zpráv' - Test case 'Test odeslání zprávy 2' failed
+[09:51:21][MessageBuffer][INFO] Message buffer cleared
