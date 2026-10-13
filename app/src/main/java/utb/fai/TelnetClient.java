@@ -17,12 +17,12 @@ public class TelnetClient {
 
     public void run() {
         try (Socket socket = new Socket(serverIp, port)) {
-            System.out.println(
-                "Připojeno k " + serverIp + ":" + port
-            );
-            System.out.println(
-                "Pro ukončení spojení zadejte /QUIT."
-            );
+            //System.out.println(
+              //  "Připojeno k " + serverIp + ":" + port
+            //);
+            //System.out.println(
+             //   "Pro ukončení spojení zadejte /QUIT."
+            //);
 
             InputStream input = socket.getInputStream();
             OutputStream output = socket.getOutputStream();
@@ -124,7 +124,7 @@ public class TelnetClient {
             receiver.interrupt();
             receiver.join();
 
-            System.out.println("\nSpojení ukončeno.");
+            //System.out.println("\nSpojení ukončeno.");
 
         } catch (UnknownHostException e) {
             System.err.println(
